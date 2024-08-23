@@ -1,5 +1,3 @@
-
-
 const ContactMe = () => {
   return (
     <section
@@ -25,28 +23,26 @@ const ContactMe = () => {
       </div>
       <div className="container-contact">
         <div className="row justify-content-center">
-          <div className="col-md-6 text-center">
-            <div className="mb-2">
-            
+          <div className="col-md-6 col-lg-4 text-center">
+            <div className="mb-4">
               <h3 className="mt-2">Email</h3>
               <p className="mail">
                 <a
                   href="mailto:timalsinasudarshan29@gmail.com"
                   style={{ color: "#BDC3C7", textDecoration: "none" }}
                 >
-                timalsinana@gmail.com
+                  timalsinanasudarshan29@gmail.com
                 </a>
               </p>
             </div>
-            <div>
-             
+            <div className="mb-4">
               <h3 className="mt-4">Phone</h3>
               <p className="phone">
                 <a
-                  href="9804001321"
+                  href="tel:9804001321"
                   style={{ color: "#BDC3C7", textDecoration: "none" }}
                 >
-                9804001321
+                  9804001321
                 </a>
               </p>
             </div>
@@ -56,25 +52,5 @@ const ContactMe = () => {
     </section>
   );
 };
+
 export default ContactMe;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

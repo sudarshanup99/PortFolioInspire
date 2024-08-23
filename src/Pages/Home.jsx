@@ -1,6 +1,16 @@
 import Typewriter from "typewriter-effect";
 
-const Home = () 
+const Home = () => {
+  return (
+    <>
+      <div className=" home-container" id="home">
+        <div>
+          <img
+            className="Image rounded-circle "
+            src="./SudarImage.jpeg"
+            alt="error"
+          />
+        </div>
         <div className="home-content">
           <h2 className="">Hi👋 I'm a</h2>
           <h1 className="">
