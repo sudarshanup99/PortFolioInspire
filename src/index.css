@@ -3,69 +3,48 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; 
+   background-color: transparent;
+   
+     
   }
   .navbar h3{
     font-family: cursive;
     font-weight: 600;
+   
   }
-  .home-container {
+  .navbarLink{
+    cursor: pointer;
+  }
+  /* Home Container */
+  .HomeContainer{
     height: 100vh;
-    color: black;
-    padding-left: 15px;
-    background-color: aquamarine;
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* background-color: #787878; */
+    margin-top: 30px;
+ overflow: hidden;
+   
   }
-  
-  .Image {
+  .HomeImage{
     height: 300px;
     margin-top: 50px;
+
   }
-  
-  .home-content h2 {
-    padding: 5px;
-    padding-top: 20px;
+ 
+  .home-content h2{
+    color: antiquewhite;
+    margin-right: 50px;
   }
-  
-  .home-content h1 {
-    color: #f29f67;
-    padding: 5px;
+  .home-content h1{
+    color: skyblue;
+    margin-right: 70px;
   }
-  
-  .home-buttons {
-    margin-top: 20px;
+  .home-buttons{
+    justify-content: center;
+    margin-right: 60px;
+    margin-top: 10px;
   }
+
   
-  .home-buttons .btn-hire {
-    background-color: #3b8ff3;
-    color: white;
-    width: 160px;
-  }
   
-  .home-buttons .btn-hire:hover {
-    background-color: white;
-    color: #3b8ff3;
-    width: 200px;
-    transition: 1s;
-  }
-  
-  .home-buttons .btn-resume {
-    background-color: #f29f67;
-    color: white;
-    margin-left: 15px;
-  }
-  
-  .home-buttons .btn-resume:hover {
-    opacity: 80%;
-    transition: 1s;
-    background-color: #636363;
-  }
-  
-  /* Media Queries for Responsiveness */
   @media (min-width: 768px) {
     .home-container {
       flex-direction: row;
@@ -80,13 +59,8 @@
       margin-left: 0;
     }
   
-    .home-content {
-      margin-left: 50px;
-    }
   
-    .home-buttons {
-      justify-content: flex-start;
-    }
+  
   }
   
   @media (max-width: 767px) {
@@ -104,19 +78,22 @@
     }
   
     .home-buttons {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+     
     }
   
-    .home-buttons .btn-resume {
-      margin-left: 0;
-      margin-top: 10px;
-    }
+    
   }
   
 .work-experience{
   background-color: #59ce8f;
   height: 600px;
+  width: 100%;
+  margin-top: 10px;
+}
+.work-experience h2{
+  padding-top: 15px;
+
 }
 
  /* tachstack */
@@ -270,6 +247,25 @@
 
 
 }
+.custom-card-width {
+  max-width: 95%; 
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .custom-card-width {
+    max-width: 70%;
+  
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-card-width {
+    max-width: 100%;
+ 
+  }
+}
+
 .project .card:hover{
     background-color: white;
     border-radius: 4px;
@@ -314,3 +310,4 @@
         margin-top: 30px;
     }
 }
+

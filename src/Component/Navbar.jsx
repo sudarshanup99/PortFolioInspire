@@ -8,7 +8,7 @@ const Navbar = () => {
           className="navbar-brand px-3 fw-bold text-uppercase fs-3 ml-3"
           href="#"
         >
-         <h3>Sudarshan</h3>
+          <h3>Sudarshan</h3>
         </a>
         <button
           className="navbar-toggler"
@@ -23,45 +23,55 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link fw-semibold px-3" href="#">
+            <a className="nav-link fw-semibold px-3 " href="#">
               Home
             </a>
-            <Link
-              to="work"
-              spy={true}
-              offset={-100}
-              duration={100}
-              className="nav-link fw-semibold px-3"
-            >
-              Work
-            </Link>
-            <Link
-              to="skill"
-              spy={true}
-              offset={-100}
-              duration={100}
-              className="nav-link fw-semibold px-3"
-            >
-              Skills
-            </Link>
-            <Link
-              to="project"
-              spy={true}
-              offset={-100}
-              duration={100}
-              className="nav-link fw-semibold px-3"
-            >
-              Project
-            </Link>
-            <Link
-              to="contact"
-              spy={true}
-              offset={-100}
-              duration={100}
-              className="nav-link fw-semibold px-3"
-            >
-              Contact
-            </Link>
+            <a className="navbarLink">
+              <Link
+                to="work"
+                spy={true}
+                offset={-100}
+                duration={100}
+                className="nav-link fw-semibold px-3 text-decoration-none cursor-pointer"
+              >
+                Work
+              </Link>
+            </a>
+            <a className="text-decoration-none navbarLink">
+              <Link
+                to="skill"
+                spy={true}
+                offset={-100}
+                duration={100}
+                className="nav-link fw-semibold px-3"
+              >
+                Skills
+              </Link>
+            </a>
+            <a className="text-decoration-none navbarLink">
+
+              <Link
+                to="project"
+                spy={true}
+                offset={-100}
+                duration={100}
+                className="nav-link fw-semibold px-3 navbarLink"
+              >
+                Project
+              </Link>
+            </a>
+            <a className="text-decoration-none navbarLink ">
+            
+              <Link
+                to="contact"
+                spy={true}
+                offset={-100}
+                duration={100}
+                className="nav-link fw-semibold px-3"
+              >
+                Contact
+              </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -4,26 +4,25 @@ const ContactMe = () => {
       id="contact"
       className="d-flex flex-column align-items-center justify-content-center mt-2"
       style={{
-        minHeight: "100vh",
+        minHeight: "90vh",
         backgroundColor: "#222B30",
         color: "#BDC3C7",
       }}
     >
-      <div className="text-center ">
+      <div className="text-center">
         <h2
           className="display-4"
           style={{
             color: "#BDC3C7",
-            marginTop: "-20px",
-            marginBottom: "150px",
+            marginBottom: "50px",
           }}
         >
           Contact Me
         </h2>
       </div>
-      <div className="container-contact">
+      <div className="container-fluid container-contact">
         <div className="row justify-content-center">
-          <div className="col-md-6 col-lg-4 text-center">
+          <div className="col-12 col-md-6 col-lg-4 text-center">
             <div className="mb-4">
               <h3 className="mt-2">Email</h3>
               <p className="mail">
@@ -54,3 +53,4 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
+

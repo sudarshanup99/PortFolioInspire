@@ -2,7 +2,7 @@ import ProjectList from "../Utils/ProjectList";
 
 const Project = () => {
   return (
-    <div className="container project " id="project">
+    <div className="container project" id="project">
       <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
         Top Recent Projects
       </h2>
@@ -10,11 +10,15 @@ const Project = () => {
       <p className="pb-3 text-center">These are some projects done by me.</p>
       <div className="row justify-content-center">
         {ProjectList.map((project) => (
-          <div className="col-md-4 col-lg-4 mb-4" key={project._id}>
-            <div className="card rounded" id="card-width">
+          <div className="col-12 col-sm-8 col-md-4 mb-4" key={project._id}>
+            <div className="card rounded h-100 custom-card-width">
               <div className="card-image">
-                <span className="card-notify-badge">Full stack</span>
-                <img src={project.image} alt={project.name} />
+             
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="img-fluid"
+                />
               </div>
               <div className="card-image-overlay m-auto mt-3">
                 <span className="card-detail-badge">
@@ -43,5 +47,3 @@ const Project = () => {
 };
 
 export default Project;
-
-
